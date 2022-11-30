@@ -62,7 +62,7 @@ if (strlen($page_heading)>0) $title .= " - " . $page_heading;  //appending the h
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 </head>
-<body background="<?=$G->wwwroot?>/img/blue-sky.jpg">
+<body style="background-color:white">
 <!--
 <body>
 -->
