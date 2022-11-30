@@ -1,7 +1,7 @@
 <?
 // include('template.inc.php');
-$G->use_slideshow=1;
-G_header('ACS Research Group');
+// $G->use_slideshow=1;
+// G_header('ACS Research Group');
 
 ?>
 <p align = 'justify'>  The ACS Group's research interests include climatic changes, air pollution modeling, air quality impact assessments,
