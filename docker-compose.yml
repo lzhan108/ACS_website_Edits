@@ -1,0 +1,32 @@
+version: '3'
+services:
+#         web:
+#             image: nginx:latest
+#             ports:
+#                 - "80:80"
+#             volumes:
+#                 - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+#                 - ./app:/app
+         php:
+           ports: 
+           - "8000:8000"
+           volumes:
+           - ./:/app
+          
+           build:
+             context: .
+             dockerfile: PHP.Dockerfile
+
+#         mysql:
+#             image: mariadb:latest
+#             environment:
+#                  MYSQL_ROOT_PASSWORD: 'CleanAirGood'
+#                  MYSQL_USER: 'ACS'
+#                  MYSQL_PASSWORD: 'CleanAirGood'
+#                  MYSQL_DATABASE: 'ACS'
+#             volumes:
+#                  - mysqldata:/var/lib/mysql
+#             ports:
+#                  - 3306:3306
+#volumes:
+#    mysqldata: {}
