@@ -61,18 +61,95 @@ section, summary, time, mark, audio, video {
 			transition: none !important;
 		}
 
+
+		ul.list1{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		  }
+		  
+		  ul.list2{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		  }
+		  
+		  li.type1 {
+			float: left;
+		  }
+		  
+		  li.type1 a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		  }
+		
+		
+		  
+		  
+/* Tooltip container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+   
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
+
+
 /* Img Containers */
 
 .img_container{
-    position:relative;
-	text-align: center;
-	display: inline-block;
-    width: 100%;
-	grid-gap: 1em;
-    line-height: 2.7;
-	margin-right: 100px;
-	margin-left: 300px;
+	grid-gap: 1em;  
+	border: none;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+	margin-left: 50px;
 }
+.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-flow: row;
+	  }
+	  
+  
+
+/* Centered text */
+.centered {
+	position: absolute;
+	top: -10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #000000;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 20pt;
+		font-weight: 800;
+		line-height: 1.75
+  }
 
 
 /* Type */
@@ -274,8 +351,12 @@ section, summary, time, mark, audio, video {
 /* Icon */
 .icons {
 	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+	margin-left: -40px;
 	list-style-type: none;
 	grid-gap: 1em;
+	background-color: #a5bfd3;
 }
 
 	.icon {
@@ -313,104 +394,67 @@ section, summary, time, mark, audio, video {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-		.icon.style2 {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			background-color: transparent;
-			border: solid 1px #c9c9c9;
-			border-radius: 4px;
-			width: 2.65em;
-			height: 2.65em;
-			display: inline-block;
-			text-align: center;
-			line-height: 2.65em;
-			color: inherit;
+	.image2.style2 {
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		background-color: transparent;
+		border: solid 1px #c9c9c9;
+		border-radius: 4px;
+		width: 2.65em;
+		height: 2.65em;
+		display: inline-block;
+		text-align: center;
+		line-height: 2.65em;
+		color: inherit;
+	}
+			.image2.style2:before {
+			font-size: 1.1em;
 		}
-
-			.icon.style2:before {
-				font-size: 1.1em;
-			}
-
-			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
-			}
-
-			.icon.style2:active {
-				background-color: rgba(242, 132, 158, 0.1);
-			}
+			.image2.style2:hover {
+			color: #f2849e;
+			border-color: #f2849e;
+		}
+			.image2.style2:active {
+			background-color: rgba(242, 132, 158, 0.1);
+		}
 
 
 /* Image */
 
 	.image {
-		border-radius: 4px;
-		border: 0;
-		display: inline-block;
 		position: relative;
+		display: flex;
+		list-style-type: none;
+		grid-gap: 1em;
+	}
+	
+	.image img {
+		display: block;
+		width: 12em;
+		height: 10em;
+		border: 3px solid rgb(0, 0, 0);
+	}
+	.image2 {
+		list-style-type: none;
+		width: 253px;
+		height: 87px;
+		grid-gap: 1em;
+	}
+	
+	.image2 img {
+		/* display: block; */
+		border: 3px solid rgb(0, 0, 0);
 	}
 
-		.image img {
-			border-radius: 4px;
-			display: block;
-		}
-
-		.image.left, .image.right {
-			max-width: 40%;
-		}
-
-			.image.left img, .image.right img {
-				width: 100%;
-			}
-
-		.image.left {
-			float: left;
-			padding: 0 1.5em 1em 0;
-			top: 0.25em;
-		}
-
-		.image.right {
-			float: right;
-			padding: 0 0 1em 1.5em;
-			top: 0.25em;
-		}
-
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.image.fit img {
-				width: 100%;
-			}
-
-		.image.main {
-			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
-		}
-
-			.image.main img {
-				width: 100%;
-			}
-
-			@media screen and (max-width: 736px) {
-
-				.image.main {
-					margin: 0 0 2em 0;
-				}
-
-			}
-
-			p {
-				margin-top: 100px;
-				margin-bottom: 100px;
-				margin-right: 100px;
-				margin-left: 100px;
-			  }
+  
+  p {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-right: 100px;
+		margin-left: 100px;
+	  }
 			  
 
 /* Main */
@@ -444,6 +488,7 @@ section, summary, time, mark, audio, video {
 	}
 
 		#footer > .inner {
+			margin-left: 100px;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
