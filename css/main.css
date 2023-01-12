@@ -76,6 +76,20 @@ section, summary, time, mark, audio, video {
 			padding: 0;
 			overflow: hidden;
 		  }
+
+		  ul.list3 {
+			list-style-type: square;
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;
+		  }
+		  ul.list4 {
+			list-style-type: none;
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;
+		  }
+		  
 		  
 		  li.type1 {
 			float: left;
@@ -92,7 +106,21 @@ section, summary, time, mark, audio, video {
 			color:#e68a5f
 		} */
 		
-		
+		.row {
+			display: flex;
+		  }
+		  
+		  .column {
+			float: left;
+		  }
+		  
+		  .left {
+			width: 25%;
+		  }
+		  
+		  .right {
+			width: 75%;
+		  }
 /* Add a black background color to the top navigation */
 .topnav {
 	background-color: #333;
@@ -131,7 +159,7 @@ section, summary, time, mark, audio, video {
   /* Tooltip text */
   .tooltip .tooltiptext {
 	visibility: hidden;
-	width: 120px;
+	width: 250px;
 	background-color: black;
 	color: #fff;
 	text-align: center;
@@ -274,7 +302,7 @@ section, summary, time, mark, audio, video {
 		line-height: 1.5;
 		/* margin: 0 0 1em 0; */
 		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		letter-spacing: 0.1em;
 	}
 
 
