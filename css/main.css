@@ -61,7 +61,12 @@ section, summary, time, mark, audio, video {
 			transition: none !important;
 		}
 	
-		ul.list1{
+		ul {
+			align-items:center;
+			padding: 1em;
+		  }
+		
+		  ul.list1{
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
@@ -562,7 +567,7 @@ section, summary, time, mark, audio, video {
 		margin-bottom: 1em;
 		margin-right: 100px;
 		margin-left: 100px;
-		font-size: 14pt;
+		font-size: 18pt;
 		letter-spacing: -0.035em;
 		font-weight: bold;
 	  }
