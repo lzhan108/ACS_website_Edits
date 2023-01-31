@@ -83,9 +83,11 @@ section, summary, time, mark, audio, video {
 
 		  ul.list3 {
 			list-style-type: square;
-			columns: 2;
-			-webkit-columns: 2;
-			-moz-columns: 2;
+			columns: 1;
+			-webkit-columns: 1;
+			-moz-columns: 1;
+			list-style-position: inside;
+
 		  }
 		  ul.list4 {
 			list-style-type: none;
@@ -117,7 +119,14 @@ section, summary, time, mark, audio, video {
 		  .column {
 			float: left;
 		  }
-		  
+		.text-center {
+				text-align: center;
+				margin-right: 2em;
+				margin-left: 2em;
+				margin-top: -2em;
+			 }
+			 
+		
 		  .left {
 			width: 25%;
 		  }
