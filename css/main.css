@@ -13,7 +13,7 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 10;
+	/* margin: 10; */
 	padding: 10;
 	border: 10;
 	font-size: 100%;
@@ -243,12 +243,13 @@ section, summary, time, mark, audio, video {
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
+		margin: 0;
 	}
 
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 16pt;
 			}
 
 		}
