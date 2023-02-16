@@ -205,13 +205,13 @@ section, summary, time, mark, audio, video {
 /* Img Containers */
 
 .img_container {
-	grid-gap: 1em;  
 	border: none;
-	display: flex;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr 1fr 1fr 2fr;
     flex-direction: row;
     flex-wrap: nowrap;
-	margin-left: 50px;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .grid_container {
@@ -220,6 +220,9 @@ section, summary, time, mark, audio, video {
 		/* grid-auto-flow: row; */
 	  }
 	  
+	  /* .item3 {
+		grid-column: span 2;
+	} */
   
 
 /* Centered text */
@@ -531,7 +534,7 @@ section, summary, time, mark, audio, video {
 	}
 	
 	.image img {
-		display: block;
+		display: flex;
 		width: 12em;
 		height: 10em;
 		border: 3px solid rgb(0, 0, 0);
@@ -560,8 +563,6 @@ section, summary, time, mark, audio, video {
 	div.a {
 		outline: 3px solid black;
 		display: block;
-		width: 12em;
-		height: 10em;
 		text-align: center;
 		/* color:#e68a5f */
 	  }
