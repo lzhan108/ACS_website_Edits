@@ -75,9 +75,7 @@ section, summary, time, mark, audio, video {
 		  }
 		  
 		  ul.list2{
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
+			list-style-type:square;
 			overflow: hidden;
 		  }
 
