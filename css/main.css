@@ -76,6 +76,7 @@ section, summary, time, mark, audio, video {
 		  
 		  ul.list2{
 			list-style-type: square;
+			margin: 1em;
 			overflow: hidden;
 		  }
 
@@ -318,20 +319,27 @@ section, summary, time, mark, audio, video {
 
 		}
 
-	h2, h3, h5, h6 {
+	h2, h3, h5 {
 		font-weight: 900;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
-		letter-spacing: -0.03em;
+		letter-spacing: -0.035em;
 	}
 
 	h4 {
 		font-weight: 700;
 		line-height: 1.5;
-		/* margin: 0 0 1em 0; */
+		margin: 1em 0 1em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: -0.02em;
+	}
+	h6 {
+		font-weight: 700;
+		line-height: 1.5;
+		margin: 0;
+		text-transform: uppercase;
+		letter-spacing: -0.02em;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -355,7 +363,7 @@ section, summary, time, mark, audio, video {
 	}
 
 	h6 {
-		font-size: 0.6em;
+		font-size: 0.8em;
 	}
 	@media screen and (max-width: 980px) {
 
@@ -586,6 +594,11 @@ section, summary, time, mark, audio, video {
 	span:hover {
 		color:#e68a5f;
 	}
+
+	.d {
+		grid-column: span 2;  
+	  }
+	  
 
 	p.p1{
 		margin-top: 1em;
