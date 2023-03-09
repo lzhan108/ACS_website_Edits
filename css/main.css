@@ -125,7 +125,8 @@ section, summary, time, mark, audio, video {
 
 		.row {
 			display: flex;
-		  }
+			align-items: stretch;
+		}
 		  
 		  .column {
 			float: left;
