@@ -572,7 +572,7 @@ section, summary, time, mark, audio, video {
 
 	div.a {
 		margin-top: 0.1em;
-		outline: 3px solid black;
+		/* outline: 3px solid black; */
 		display: block;
 		text-align: center;
 		/* color:#e68a5f */
