@@ -645,7 +645,7 @@ div.headerElements:before {
 	.header {
 		padding: 4em 0 4em 0 ;
 		background-color: #a5bfd3;
-		text-align: right;
+		text-align: center;
 		font-size: 20px;
 }
 
