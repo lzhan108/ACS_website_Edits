@@ -76,7 +76,7 @@ section, summary, time, mark, audio, video {
 		  
 		  ul.list2{
 			list-style-type: square;
-			margin: 1em;
+			margin: 0em 1em 0em 1em;
 			overflow: hidden;
 		  }
 
@@ -325,10 +325,17 @@ div.headerElements:before {
 
 		}
 
-	h2, h3, h5 {
+	h3, h5 {
 		font-weight: 900;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
+		text-transform: uppercase;
+		letter-spacing: -0.035em;
+	}
+	h2 {
+		font-weight: 900;
+		line-height: 1.5;
+		margin: 0;
 		text-transform: uppercase;
 		letter-spacing: -0.035em;
 	}
@@ -634,6 +641,7 @@ div.headerElements:before {
 		letter-spacing: -0.035em;
 	  }
 	  p.p4 {
+		font-size: 12pt;
 		margin-top: 1em;
 		margin-bottom: 1em;
 		margin-right: 100px;
@@ -657,7 +665,7 @@ div.headerElements:before {
 /* Header */
 
 	.header {
-		padding: 4em 0 4em 0 ;
+		padding: 1em 0 1em 0 ;
 		background-color: #a5bfd3;
 		text-align: center;
 		font-size: 20px;
