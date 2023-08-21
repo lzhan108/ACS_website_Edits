@@ -118,7 +118,7 @@ section, summary, time, mark, audio, video {
 			display: block;
 			color: white;
 			text-align: center;
-			padding: 16px 16px;
+			padding: 1em;
 			text-decoration: none;
 			background-color:#e68a5f;
 		  }	
