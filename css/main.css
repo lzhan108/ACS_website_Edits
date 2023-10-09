@@ -208,10 +208,12 @@ section, summary, time, mark, audio, video {
 	border: none;
 	display: grid;
 	place-items: center;
-	grid-template-columns: 1fr 1fr 1fr 2fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
     flex-direction: row;
     flex-wrap: nowrap;
 	justify-content: space-evenly;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .grid_container {
@@ -622,8 +624,8 @@ div.headerElements:before {
 	p.p1{
 		margin-top: 1em;
 		margin-bottom: 4em;
-		margin-right: 100px;
-		margin-left: 100px;
+		margin-right: 2em;
+		margin-left: 2em;
 		font-size: 16pt;
 		letter-spacing: -0.05em;
 		font-weight: bold;
@@ -683,8 +685,9 @@ header {
 /* Footer */
 
 	#footer {
-		padding: 1em 0 1em 0 ;
+		/* padding: 1em 0 1em 0 ; */
 		background-color: #f6f6f6;
+		/* background-color:#a5bfd3; */
 	}
 
 		#footer > .inner {
