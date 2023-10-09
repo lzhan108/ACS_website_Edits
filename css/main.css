@@ -212,8 +212,8 @@ section, summary, time, mark, audio, video {
     flex-direction: row;
     flex-wrap: nowrap;
 	justify-content: space-evenly;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 .grid_container {
