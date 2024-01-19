@@ -78,6 +78,8 @@ section, summary, time, mark, audio, video {
 			list-style-type: square;
 			margin: 0em 1em 0em 1em;
 			overflow: hidden;
+			padding-bottom: 0em;
+			padding-top: 0em;
 		  }
 
 		  ul.list3 {
@@ -337,9 +339,12 @@ div.headerElements:before {
 		h2 {
 			font-weight: 900;
 			line-height: 1.5;
-			margin: 1 0em;
 			text-transform: uppercase;
 			letter-spacing: -0.035em;
+		}
+		.years {
+			margin-bottom: 0em;
+			font-size: 1.3em;
 		}
 	h5 {
 		font-weight: 900;
